@@ -38,3 +38,12 @@ print("Comida registrada:",comida_y_montos)
 
 for comida,precio in comida_y_montos.items():
         print(f"{comida} su precio es {precio}")
+        continue
+suma_votantes = len(votantes)
+suma_precio= sum(comida_y_montos.values())
+
+if suma_votantes !=0:
+        total_cada_uno= suma_precio / suma_votantes
+        print(f"En total cada uno debe pagar es: {total_cada_uno}")
+else:
+        print("No debe haber minimo una persona para hacer esta dividion de precios")
